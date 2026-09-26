@@ -26,7 +26,7 @@ CONFIGS = {
     "hybrid-256-rerank-expand": dict(size=256, method="hybrid", rerank=True, expand=True),
     "hybrid-512-rerank-expand": dict(size=512, method="hybrid", rerank=True, expand=True),
 }
-DEFAULT = "hybrid-256-rerank-expand"
+DEFAULT = "hybrid-128-rerank-expand"
 OVERLAP = 0.125          # of the chunk size
 BUDGET_WORDS = 2560      # recall at an equal amount of text handed to the model
 METRICS = ["recall@5", "recall@10", "recall@20", "recall@budget", "mrr@10", "ndcg@10"]
