@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      # CUAD is downloaded once, pinned to a commit and checked against its hash
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/groundtruth
+          key: cuad-67faa0e
+      - run: pip install -e '.[dev]'
+      - name: Unit tests
+        run: pytest -q
+      - name: Retrieval regression gate (fails if recall@10 drops more than 1 point)
+        run: python -m groundtruth gate

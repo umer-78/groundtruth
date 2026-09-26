@@ -1,0 +1,22 @@
+{
+ "Governing Law": "Which state/country's law governs the interpretation of the contract?",
+ "Expiration Date": "On what date will the contract's initial term expire?",
+ "Anti-Assignment": "Is consent or notice required of a party if the contract is assigned to a third party?",
+ "License Grant": "Does the contract contain a license granted by one party to its counterparty?",
+ "Cap On Liability": "Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.",
+ "Audit Rights": "Does a party have the right to\u00a0 audit the books, records, or physical locations of the counterparty to ensure compliance with the contract?",
+ "Revenue/Profit Sharing": "Is one party required to share revenue or profit with the counterparty for any technology, goods, or\u00a0services?",
+ "Exclusivity": "Is there an exclusive dealing\u00a0 commitment with the counterparty? This includes a commitment to procure all \u201crequirements\u201d from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on\u00a0 collaborating or working with other parties), whether during the contract or\u00a0 after the contract ends (or both).",
+ "Insurance": "Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+ "Minimum Commitment": "Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?",
+ "Post-Termination Services": "Is a party subject to obligations after the termination or expiration of a contract, including any post-termination transition, payment, transfer of IP, wind-down, last-buy, or similar commitments?",
+ "Termination For Convenience": "Can a party terminate this\u00a0 contract without cause (solely by giving a notice and allowing a waiting\u00a0 period to expire)?",
+ "Change Of Control": "Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?",
+ "Renewal Term": "What is the renewal term after the initial term expires? This includes automatic extensions and unilateral extensions with prior notice.",
+ "Covenant Not To Sue": "Is a party restricted from contesting the validity of the counterparty\u2019s ownership of intellectual property or otherwise bringing a claim against the counterparty for matters unrelated to the contract?",
+ "Ip Ownership Assignment": "Does intellectual property created\u00a0 by one party become the property of the counterparty, either per the terms of the contract or upon the occurrence of certain events?",
+ "Non-Compete": "Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector?",
+ "Non-Transferable License": "Does the contract limit the ability of a party to transfer the license being granted to a third party?",
+ "Rofr/Rofo/Rofn": "Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+ "Volume Restriction": "Is there a fee increase or consent requirement, etc. if one party\u2019s use of the product/services exceeds certain threshold?"
+}

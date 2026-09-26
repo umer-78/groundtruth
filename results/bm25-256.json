@@ -1,0 +1,1640 @@
+{
+ "config": "bm25-256",
+ "size": 256,
+ "method": "bm25",
+ "chunks": 18078,
+ "budget_k": 10,
+ "ms_per_query": 17.7,
+ "summary": {
+  "recall@5": 28.2,
+  "recall@10": 36.8,
+  "recall@20": 46.8,
+  "recall@budget": 36.8,
+  "mrr@10": 17.0,
+  "ndcg@10": 19.9
+ },
+ "by_category": {
+  "Anti-Assignment": 60.0,
+  "Audit Rights": 30.0,
+  "Cap On Liability": 20.0,
+  "Change Of Control": 2.9,
+  "Covenant Not To Sue": 20.0,
+  "Exclusivity": 13.3,
+  "Expiration Date": 80.0,
+  "Governing Law": 20.0,
+  "Insurance": 40.0,
+  "Ip Ownership Assignment": 45.0,
+  "License Grant": 33.3,
+  "Minimum Commitment": 53.3,
+  "Non-Compete": 20.0,
+  "Non-Transferable License": 35.0,
+  "Post-Termination Services": 24.0,
+  "Renewal Term": 60.0,
+  "Revenue/Profit Sharing": 30.0,
+  "Rofr/Rofo/Rofn": 40.0,
+  "Termination For Convenience": 60.0,
+  "Volume Restriction": 50.0
+ },
+ "queries": [
+  {
+   "qid": "governing-law-000",
+   "category": "Governing Law",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "LOOKSMARTLTD_07_20_2012-EX-99.(D)(I)-SPONSORSHIP AGREEMENT#17",
+    "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT#2",
+    "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT#1"
+   ]
+  },
+  {
+   "qid": "governing-law-001",
+   "category": "Governing Law",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "ABILITYINC_06_15_2020-EX-4.25-SERVICES AGREEMENT#15",
+    "RandWorldwideInc_20010402_8-KA_EX-10.2_2102464_EX-10.2_Co-Branding Agreement#0",
+    "VALENCETECHNOLOGYINC_02_14_2003-EX-10-JOINT VENTURE CONTRACT#45"
+   ]
+  },
+  {
+   "qid": "governing-law-002",
+   "category": "Governing Law",
+   "first_relevant": 8,
+   "recall@5": 0.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.125,
+   "ndcg@10": 0.19342640361727081,
+   "top3": [
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #0",
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #101",
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #95"
+   ]
+  },
+  {
+   "qid": "governing-law-003",
+   "category": "Governing Law",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#2",
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#18",
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#5"
+   ]
+  },
+  {
+   "qid": "governing-law-004",
+   "category": "Governing Law",
+   "first_relevant": 15,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#0",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#18",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#2"
+   ]
+  },
+  {
+   "qid": "expiration-date-005",
+   "category": "Expiration Date",
+   "first_relevant": 7,
+   "recall@5": 0.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.14285714285714285,
+   "ndcg@10": 0.20438239758848611,
+   "top3": [
+    "USASYNTHETICFUELCORP_10_21_2010-EX-10.10-STRATEGIC ALLIANCE AGREEMENT#0",
+    "USASYNTHETICFUELCORP_10_21_2010-EX-10.10-STRATEGIC ALLIANCE AGREEMENT#2",
+    "USASYNTHETICFUELCORP_10_21_2010-EX-10.10-STRATEGIC ALLIANCE AGREEMENT#3"
+   ]
+  },
+  {
+   "qid": "expiration-date-006",
+   "category": "Expiration Date",
+   "first_relevant": 1,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 1.0,
+   "ndcg@10": 1.0,
+   "top3": [
+    "CURAEGISTECHNOLOGIES,INC_05_26_2010-EX-1-CORPORATE SPONSORSHIP AGREEMENT#0",
+    "CURAEGISTECHNOLOGIES,INC_05_26_2010-EX-1-CORPORATE SPONSORSHIP AGREEMENT#1",
+    "CURAEGISTECHNOLOGIES,INC_05_26_2010-EX-1-CORPORATE SPONSORSHIP AGREEMENT#5"
+   ]
+  },
+  {
+   "qid": "expiration-date-007",
+   "category": "Expiration Date",
+   "first_relevant": 39,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT#2",
+    "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT#0",
+    "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT#14"
+   ]
+  },
+  {
+   "qid": "expiration-date-008",
+   "category": "Expiration Date",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "WOMENSGOLFUNLIMITEDINC_03_29_2000-EX-10.13-ENDORSEMENT AGREEMENT - Intellectual Property Rights                 Confidentiality and Non-Use Obligations Agreement#0",
+    "WOMENSGOLFUNLIMITEDINC_03_29_2000-EX-10.13-ENDORSEMENT AGREEMENT#16",
+    "WOMENSGOLFUNLIMITEDINC_03_29_2000-EX-10.13-ENDORSEMENT AGREEMENT#0"
+   ]
+  },
+  {
+   "qid": "expiration-date-009",
+   "category": "Expiration Date",
+   "first_relevant": 1,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 1.0,
+   "ndcg@10": 1.0,
+   "top3": [
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#0",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#18",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#2"
+   ]
+  },
+  {
+   "qid": "anti-assignment-010",
+   "category": "Anti-Assignment",
+   "first_relevant": 2,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.5,
+   "ndcg@10": 0.38685280723454163,
+   "top3": [
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT#0",
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT#9",
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT#6"
+   ]
+  },
+  {
+   "qid": "anti-assignment-011",
+   "category": "Anti-Assignment",
+   "first_relevant": 63,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#2",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.1_10972555_EX-10.1_Endorsement Agreement#0",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#0"
+   ]
+  },
+  {
+   "qid": "anti-assignment-012",
+   "category": "Anti-Assignment",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement#0",
+    "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement#12",
+    "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement#11"
+   ]
+  },
+  {
+   "qid": "anti-assignment-013",
+   "category": "Anti-Assignment",
+   "first_relevant": 4,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.43067655807339306,
+   "top3": [
+    "CHIPMOSTECHNOLOGIESBERMUDALTD_04_18_2016-EX-4.72-Strategic Alliance Agreement#0",
+    "CHIPMOSTECHNOLOGIESBERMUDALTD_04_18_2016-EX-4.72-Strategic Alliance Agreement#8",
+    "CHIPMOSTECHNOLOGIESBERMUDALTD_04_18_2016-EX-4.72-Strategic Alliance Agreement#1"
+   ]
+  },
+  {
+   "qid": "anti-assignment-014",
+   "category": "Anti-Assignment",
+   "first_relevant": 5,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.2,
+   "ndcg@10": 0.38685280723454163,
+   "top3": [
+    "Quaker Chemical Corporation - NON COMPETITION AND NON SOLICITATION AGREEMENT#0",
+    "Quaker Chemical Corporation - NON COMPETITION AND NON SOLICITATION AGREEMENT#15",
+    "Quaker Chemical Corporation - NON COMPETITION AND NON SOLICITATION AGREEMENT#3"
+   ]
+  },
+  {
+   "qid": "license-grant-015",
+   "category": "License Grant",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "MERITLIFEINSURANCECO_06_19_2020-EX-10.(XIV)-MASTER SERVICES AGREEMENT#0",
+    "MERITLIFEINSURANCECO_06_19_2020-EX-10.(XIV)-MASTER SERVICES AGREEMENT#14",
+    "ARMSTRONGFLOORING,INC_01_07_2019-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT#35"
+   ]
+  },
+  {
+   "qid": "license-grant-016",
+   "category": "License Grant",
+   "first_relevant": 42,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#18",
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#2",
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#6"
+   ]
+  },
+  {
+   "qid": "license-grant-017",
+   "category": "License Grant",
+   "first_relevant": 7,
+   "recall@5": 0.0,
+   "recall@10": 0.6666666666666666,
+   "recall@20": 0.6666666666666666,
+   "recall@budget": 0.6666666666666666,
+   "mrr@10": 0.14285714285714285,
+   "ndcg@10": 0.20438239758848611,
+   "top3": [
+    "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.#1",
+    "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.#0",
+    "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.#18"
+   ]
+  },
+  {
+   "qid": "license-grant-018",
+   "category": "License Grant",
+   "first_relevant": 2,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.5,
+   "ndcg@10": 0.6309297535714575,
+   "top3": [
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#0",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#2",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement#18"
+   ]
+  },
+  {
+   "qid": "license-grant-019",
+   "category": "License Grant",
+   "first_relevant": 105,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PROFOUNDMEDICALCORP_08_29_2019-EX-4.5-SUPPLY AGREEMENT#0",
+    "PROFOUNDMEDICALCORP_08_29_2019-EX-4.5-SUPPLY AGREEMENT#41",
+    "PROFOUNDMEDICALCORP_08_29_2019-EX-4.5-SUPPLY AGREEMENT#45"
+   ]
+  },
+  {
+   "qid": "cap-on-liability-020",
+   "category": "Cap On Liability",
+   "first_relevant": 77,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT#0",
+    "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT#62",
+    "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT#58"
+   ]
+  },
+  {
+   "qid": "cap-on-liability-021",
+   "category": "Cap On Liability",
+   "first_relevant": 190,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT#0",
+    "SouthernStarEnergyInc_20051202_SB-2A_EX-9_801890_EX-9_Affiliate Agreement#13",
+    "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT#8"
+   ]
+  },
+  {
+   "qid": "cap-on-liability-022",
+   "category": "Cap On Liability",
+   "first_relevant": 56,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1#101",
+    "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4#2",
+    "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1#100"
+   ]
+  },
+  {
+   "qid": "cap-on-liability-023",
+   "category": "Cap On Liability",
+   "first_relevant": 15,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.5,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#3",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#107",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#2"
+   ]
+  },
+  {
+   "qid": "cap-on-liability-024",
+   "category": "Cap On Liability",
+   "first_relevant": 4,
+   "recall@5": 0.5,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.46845052016107697,
+   "top3": [
+    "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT#0",
+    "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT#11",
+    "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT#7"
+   ]
+  },
+  {
+   "qid": "audit-rights-025",
+   "category": "Audit Rights",
+   "first_relevant": 12,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement#31",
+    "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement#29",
+    "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement#32"
+   ]
+  },
+  {
+   "qid": "audit-rights-026",
+   "category": "Audit Rights",
+   "first_relevant": 17,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "AMBASSADOREYEWEARGROUPINC_11_17_1997-EX-10.28-ENDORSEMENT AGREEMENT#25",
+    "AMBASSADOREYEWEARGROUPINC_11_17_1997-EX-10.28-ENDORSEMENT AGREEMENT#0",
+    "AMBASSADOREYEWEARGROUPINC_11_17_1997-EX-10.28-ENDORSEMENT AGREEMENT#24"
+   ]
+  },
+  {
+   "qid": "audit-rights-027",
+   "category": "Audit Rights",
+   "first_relevant": 1,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 1.0,
+   "ndcg@10": 1.0,
+   "top3": [
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#18",
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#2",
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#51"
+   ]
+  },
+  {
+   "qid": "audit-rights-028",
+   "category": "Audit Rights",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT#0",
+    "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT#62",
+    "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT#58"
+   ]
+  },
+  {
+   "qid": "audit-rights-029",
+   "category": "Audit Rights",
+   "first_relevant": 5,
+   "recall@5": 0.5,
+   "recall@10": 0.5,
+   "recall@20": 0.5,
+   "recall@budget": 0.5,
+   "mrr@10": 0.2,
+   "ndcg@10": 0.23719771276929622,
+   "top3": [
+    "HALITRON,INC_03_01_2005-EX-10.15-SPONSORSHIP AND DEVELOPMENT AGREEMENT#0",
+    "HALITRON,INC_03_01_2005-EX-10.15-SPONSORSHIP AND DEVELOPMENT AGREEMENT#17",
+    "PHREESIA,INC_05_28_2019-EX-10.18-STRATEGIC ALLIANCE AGREEMENT#48"
+   ]
+  },
+  {
+   "qid": "revenue-profit-sharing-030",
+   "category": "Revenue/Profit Sharing",
+   "first_relevant": 10,
+   "recall@5": 0.0,
+   "recall@10": 0.5,
+   "recall@20": 0.5,
+   "recall@budget": 0.5,
+   "mrr@10": 0.1,
+   "ndcg@10": 0.11284514134893527,
+   "top3": [
+    "AMBASSADOREYEWEARGROUPINC_11_17_1997-EX-10.28-ENDORSEMENT AGREEMENT#25",
+    "AMBASSADOREYEWEARGROUPINC_11_17_1997-EX-10.28-ENDORSEMENT AGREEMENT#0",
+    "AMBASSADOREYEWEARGROUPINC_11_17_1997-EX-10.28-ENDORSEMENT AGREEMENT#5"
+   ]
+  },
+  {
+   "qid": "revenue-profit-sharing-031",
+   "category": "Revenue/Profit Sharing",
+   "first_relevant": 137,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GOOSEHEADINSURANCE,INC_04_02_2018-EX-10.6-Franchise Agreement#169",
+    "GOOSEHEADINSURANCE,INC_04_02_2018-EX-10.6-Franchise Agreement#153",
+    "GOOSEHEADINSURANCE,INC_04_02_2018-EX-10.6-Franchise Agreement#148"
+   ]
+  },
+  {
+   "qid": "revenue-profit-sharing-032",
+   "category": "Revenue/Profit Sharing",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5437713091520254,
+   "top3": [
+    "GSVINC_05_15_1998-EX-10-SPONSORSHIP AGREEMENT#13",
+    "GSVINC_05_15_1998-EX-10-SPONSORSHIP AGREEMENT#12",
+    "N2KINC_10_16_1997-EX-10.16-SPONSORSHIP AGREEMENT#11"
+   ]
+  },
+  {
+   "qid": "revenue-profit-sharing-033",
+   "category": "Revenue/Profit Sharing",
+   "first_relevant": 26,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#13",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#72",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#0"
+   ]
+  },
+  {
+   "qid": "revenue-profit-sharing-034",
+   "category": "Revenue/Profit Sharing",
+   "first_relevant": 63,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#2",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.1_10972555_EX-10.1_Endorsement Agreement#0",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#0"
+   ]
+  },
+  {
+   "qid": "exclusivity-035",
+   "category": "Exclusivity",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement#11",
+    "VALENCETECHNOLOGYINC_02_14_2003-EX-10-JOINT VENTURE CONTRACT#16",
+    "UpjohnInc_20200121_10-12G_EX-2.6_11948692_EX-2.6_Manufacturing Agreement_ Supply Agreement#86"
+   ]
+  },
+  {
+   "qid": "exclusivity-036",
+   "category": "Exclusivity",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #0",
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #95",
+    "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement#11"
+   ]
+  },
+  {
+   "qid": "exclusivity-037",
+   "category": "Exclusivity",
+   "first_relevant": 2,
+   "recall@5": 0.3333333333333333,
+   "recall@10": 0.3333333333333333,
+   "recall@20": 0.3333333333333333,
+   "recall@budget": 0.3333333333333333,
+   "mrr@10": 0.5,
+   "ndcg@10": 0.2960819109658652,
+   "top3": [
+    "HALITRON,INC_03_01_2005-EX-10.15-SPONSORSHIP AND DEVELOPMENT AGREEMENT#17",
+    "HALITRON,INC_03_01_2005-EX-10.15-SPONSORSHIP AND DEVELOPMENT AGREEMENT#0",
+    "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement#11"
+   ]
+  },
+  {
+   "qid": "exclusivity-038",
+   "category": "Exclusivity",
+   "first_relevant": 8,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.125,
+   "ndcg@10": 0.19342640361727081,
+   "top3": [
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#3",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#2",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#0"
+   ]
+  },
+  {
+   "qid": "exclusivity-039",
+   "category": "Exclusivity",
+   "first_relevant": 6,
+   "recall@5": 0.0,
+   "recall@10": 0.3333333333333333,
+   "recall@20": 0.3333333333333333,
+   "recall@budget": 0.3333333333333333,
+   "mrr@10": 0.16666666666666666,
+   "ndcg@10": 0.1208113026994942,
+   "top3": [
+    "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement#11",
+    "HEMISPHERX - Sales, Marketing, Distribution, and Supply Agreement#0",
+    "VALENCETECHNOLOGYINC_02_14_2003-EX-10-JOINT VENTURE CONTRACT#16"
+   ]
+  },
+  {
+   "qid": "insurance-040",
+   "category": "Insurance",
+   "first_relevant": 23,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "Reinsurance Group of America, Incorporated - A_R REMARKETING  AGREEMENT#70",
+    "Reinsurance Group of America, Incorporated - A_R REMARKETING  AGREEMENT#0",
+    "Reinsurance Group of America, Incorporated - A_R REMARKETING  AGREEMENT#69"
+   ]
+  },
+  {
+   "qid": "insurance-041",
+   "category": "Insurance",
+   "first_relevant": 13,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "Columbia Laboratories, (Bermuda) Ltd. - AMEND NO. 2 TO MANUFACTURING AND SUPPLY AGREEMENT#0",
+    "Columbia Laboratories, (Bermuda) Ltd. - AMEND NO. 2 TO MANUFACTURING AND SUPPLY AGREEMENT#30",
+    "Columbia Laboratories, (Bermuda) Ltd. - AMEND NO. 2 TO MANUFACTURING AND SUPPLY AGREEMENT#11"
+   ]
+  },
+  {
+   "qid": "insurance-042",
+   "category": "Insurance",
+   "first_relevant": 6,
+   "recall@5": 0.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.16666666666666666,
+   "ndcg@10": 0.3562071871080222,
+   "top3": [
+    "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement#0",
+    "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement#13",
+    "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement#12"
+   ]
+  },
+  {
+   "qid": "insurance-043",
+   "category": "Insurance",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "BIOPURECORP_06_30_1999-EX-10.13-AGENCY AGREEMENT#0",
+    "PhasebioPharmaceuticalsInc_20200330_10-K_EX-10.21_12086810_EX-10.21_Development Agreement#158",
+    "BIOPURECORP_06_30_1999-EX-10.13-AGENCY AGREEMENT#24"
+   ]
+  },
+  {
+   "qid": "insurance-044",
+   "category": "Insurance",
+   "first_relevant": 5,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.2,
+   "ndcg@10": 0.23719771276929622,
+   "top3": [
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement#0",
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement#28",
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement#14"
+   ]
+  },
+  {
+   "qid": "minimum-commitment-045",
+   "category": "Minimum Commitment",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement#31",
+    "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement#29",
+    "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement#0"
+   ]
+  },
+  {
+   "qid": "minimum-commitment-046",
+   "category": "Minimum Commitment",
+   "first_relevant": 5,
+   "recall@5": 0.3333333333333333,
+   "recall@10": 0.6666666666666666,
+   "recall@20": 0.6666666666666666,
+   "recall@budget": 0.6666666666666666,
+   "mrr@10": 0.2,
+   "ndcg@10": 0.22924436334369883,
+   "top3": [
+    "USASYNTHETICFUELCORP_10_21_2010-EX-10.10-STRATEGIC ALLIANCE AGREEMENT#0",
+    "USASYNTHETICFUELCORP_10_21_2010-EX-10.10-STRATEGIC ALLIANCE AGREEMENT#2",
+    "USASYNTHETICFUELCORP_10_21_2010-EX-10.10-STRATEGIC ALLIANCE AGREEMENT#19"
+   ]
+  },
+  {
+   "qid": "minimum-commitment-047",
+   "category": "Minimum Commitment",
+   "first_relevant": 23,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "Reinsurance Group of America, Incorporated - A_R REMARKETING  AGREEMENT#0",
+    "Reinsurance Group of America, Incorporated - A_R REMARKETING  AGREEMENT#69",
+    "Reinsurance Group of America, Incorporated - A_R REMARKETING  AGREEMENT#70"
+   ]
+  },
+  {
+   "qid": "minimum-commitment-048",
+   "category": "Minimum Commitment",
+   "first_relevant": 3,
+   "recall@5": 0.5,
+   "recall@10": 0.5,
+   "recall@20": 1.0,
+   "recall@budget": 0.5,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.3065735963827292,
+   "top3": [
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#2",
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#6",
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#5"
+   ]
+  },
+  {
+   "qid": "minimum-commitment-049",
+   "category": "Minimum Commitment",
+   "first_relevant": 9,
+   "recall@5": 0.0,
+   "recall@10": 0.5,
+   "recall@20": 1.0,
+   "recall@budget": 0.5,
+   "mrr@10": 0.1111111111111111,
+   "ndcg@10": 0.14126697285982898,
+   "top3": [
+    "STWRESOURCESHOLDINGCORP_08_06_2014-EX-10.1-COOPERATION AGREEMENT#0",
+    "STWRESOURCESHOLDINGCORP_08_06_2014-EX-10.1-COOPERATION AGREEMENT#19",
+    "STWRESOURCESHOLDINGCORP_08_06_2014-EX-10.1-COOPERATION AGREEMENT#16"
+   ]
+  },
+  {
+   "qid": "post-termination-services-050",
+   "category": "Post-Termination Services",
+   "first_relevant": 6,
+   "recall@5": 0.0,
+   "recall@10": 0.2,
+   "recall@20": 0.6,
+   "recall@budget": 0.2,
+   "mrr@10": 0.16666666666666666,
+   "ndcg@10": 0.13905617951077562,
+   "top3": [
+    "HEMISPHERX - Sales, Marketing, Distribution, and Supply Agreement#0",
+    "EtonPharmaceuticalsInc_20191114_10-Q_EX-10.1_11893941_EX-10.1_Development Agreement#29",
+    "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT#43"
+   ]
+  },
+  {
+   "qid": "post-termination-services-051",
+   "category": "Post-Termination Services",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#2",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.1_10972555_EX-10.1_Endorsement Agreement#0",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.1_10972555_EX-10.1_Endorsement Agreement#12"
+   ]
+  },
+  {
+   "qid": "post-termination-services-052",
+   "category": "Post-Termination Services",
+   "first_relevant": 1,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 1.0,
+   "ndcg@10": 0.8772153153380493,
+   "top3": [
+    "TEARDROPGOLFCO_10_23_1996-EX-10.12-ENDORSEMENT AGREEMENT#2",
+    "TEARDROPGOLFCO_10_23_1996-EX-10.12-ENDORSEMENT AGREEMENT#0",
+    "TEARDROPGOLFCO_10_23_1996-EX-10.12-ENDORSEMENT AGREEMENT#15"
+   ]
+  },
+  {
+   "qid": "post-termination-services-053",
+   "category": "Post-Termination Services",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT#18",
+    "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT#17",
+    "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT#0"
+   ]
+  },
+  {
+   "qid": "post-termination-services-054",
+   "category": "Post-Termination Services",
+   "first_relevant": 11,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.3333333333333333,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "STWRESOURCESHOLDINGCORP_08_06_2014-EX-10.1-COOPERATION AGREEMENT#0",
+    "STWRESOURCESHOLDINGCORP_08_06_2014-EX-10.1-COOPERATION AGREEMENT#19",
+    "STWRESOURCESHOLDINGCORP_08_06_2014-EX-10.1-COOPERATION AGREEMENT#16"
+   ]
+  },
+  {
+   "qid": "termination-for-convenience-055",
+   "category": "Termination For Convenience",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#60",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#21",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#59"
+   ]
+  },
+  {
+   "qid": "termination-for-convenience-056",
+   "category": "Termination For Convenience",
+   "first_relevant": 140,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#102",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#2",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#3"
+   ]
+  },
+  {
+   "qid": "termination-for-convenience-057",
+   "category": "Termination For Convenience",
+   "first_relevant": 4,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.43067655807339306,
+   "top3": [
+    "BIOPURECORP_06_30_1999-EX-10.13-AGENCY AGREEMENT#0",
+    "HarpoonTherapeuticsInc_20200312_10-K_EX-10.18_12051356_EX-10.18_Development Agreement#48",
+    "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT#40"
+   ]
+  },
+  {
+   "qid": "termination-for-convenience-058",
+   "category": "Termination For Convenience",
+   "first_relevant": 4,
+   "recall@5": 0.5,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.44130740935663865,
+   "top3": [
+    "OMINTO,INC_03_29_2004-EX-10-RESELLER AGREEMENT#0",
+    "OMINTO,INC_03_29_2004-EX-10-RESELLER AGREEMENT#7",
+    "OMINTO,INC_03_29_2004-EX-10-RESELLER AGREEMENT#8"
+   ]
+  },
+  {
+   "qid": "termination-for-convenience-059",
+   "category": "Termination For Convenience",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "RaeSystemsInc_20001114_10-Q_EX-10.57_2631790_EX-10.57_Co-Branding Agreement#9",
+    "HarpoonTherapeuticsInc_20200312_10-K_EX-10.18_12051356_EX-10.18_Development Agreement#48",
+    "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT#40"
+   ]
+  },
+  {
+   "qid": "change-of-control-060",
+   "category": "Change Of Control",
+   "first_relevant": 6,
+   "recall@5": 0.0,
+   "recall@10": 0.14285714285714285,
+   "recall@20": 0.14285714285714285,
+   "recall@budget": 0.14285714285714285,
+   "mrr@10": 0.16666666666666666,
+   "ndcg@10": 0.10778915452451093,
+   "top3": [
+    "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT #2",
+    "ConformisInc_20191101_10-Q_EX-10.6_11861402_EX-10.6_Development Agreement#34",
+    "PHREESIA,INC_05_28_2019-EX-10.18-STRATEGIC ALLIANCE AGREEMENT#2"
+   ]
+  },
+  {
+   "qid": "change-of-control-061",
+   "category": "Change Of Control",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "AimmuneTherapeuticsInc_20200205_8-K_EX-10.3_11967170_EX-10.3_Development Agreement#96",
+    "BERKELEYLIGHTS,INC_06_26_2020-EX-10.12-COLLABORATION AGREEMENT#133",
+    "PhasebioPharmaceuticalsInc_20200330_10-K_EX-10.21_12086810_EX-10.21_Development Agreement#190"
+   ]
+  },
+  {
+   "qid": "change-of-control-062",
+   "category": "Change Of Control",
+   "first_relevant": 16,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.5,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "ConformisInc_20191101_10-Q_EX-10.6_11861402_EX-10.6_Development Agreement#34",
+    "BellringBrandsInc_20190920_S-1_EX-10.12_11817081_EX-10.12_Manufacturing Agreement1#26",
+    "HarpoonTherapeuticsInc_20200312_10-K_EX-10.18_12051356_EX-10.18_Development Agreement#158"
+   ]
+  },
+  {
+   "qid": "change-of-control-063",
+   "category": "Change Of Control",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT#68",
+    "PhasebioPharmaceuticalsInc_20200330_10-K_EX-10.21_12086810_EX-10.21_Development Agreement#190",
+    "BellringBrandsInc_20190920_S-1_EX-10.12_11817081_EX-10.12_Manufacturing Agreement1#26"
+   ]
+  },
+  {
+   "qid": "change-of-control-064",
+   "category": "Change Of Control",
+   "first_relevant": 64,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PhasebioPharmaceuticalsInc_20200330_10-K_EX-10.21_12086810_EX-10.21_Development Agreement#190",
+    "BellringBrandsInc_20190920_S-1_EX-10.12_11817081_EX-10.12_Manufacturing Agreement1#26",
+    "CoherusBiosciencesInc_20200227_10-K_EX-10.29_12021376_EX-10.29_Development Agreement#93"
+   ]
+  },
+  {
+   "qid": "renewal-term-065",
+   "category": "Renewal Term",
+   "first_relevant": 2,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.5,
+   "ndcg@10": 0.6309297535714575,
+   "top3": [
+    "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement#4",
+    "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement#2",
+    "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement#1"
+   ]
+  },
+  {
+   "qid": "renewal-term-066",
+   "category": "Renewal Term",
+   "first_relevant": 32,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1#101",
+    "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4#2",
+    "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1#0"
+   ]
+  },
+  {
+   "qid": "renewal-term-067",
+   "category": "Renewal Term",
+   "first_relevant": 4,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.43067655807339306,
+   "top3": [
+    "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement#0",
+    "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement#12",
+    "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement#13"
+   ]
+  },
+  {
+   "qid": "renewal-term-068",
+   "category": "Renewal Term",
+   "first_relevant": 182,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT#0",
+    "BUFFALOWILDWINGSINC_06_05_1998-EX-10.3-FRANCHISE AGREEMENT#11",
+    "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT#8"
+   ]
+  },
+  {
+   "qid": "renewal-term-069",
+   "category": "Renewal Term",
+   "first_relevant": 2,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.5,
+   "ndcg@10": 0.6309297535714575,
+   "top3": [
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#3",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#6",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#60"
+   ]
+  },
+  {
+   "qid": "covenant-not-to-sue-070",
+   "category": "Covenant Not To Sue",
+   "first_relevant": 48,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "HarpoonTherapeuticsInc_20200312_10-K_EX-10.18_12051356_EX-10.18_Development Agreement#3",
+    "HarpoonTherapeuticsInc_20200312_10-K_EX-10.18_12051356_EX-10.18_Development Agreement#107",
+    "HarpoonTherapeuticsInc_20200312_10-K_EX-10.18_12051356_EX-10.18_Development Agreement#171"
+   ]
+  },
+  {
+   "qid": "covenant-not-to-sue-071",
+   "category": "Covenant Not To Sue",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "UpjohnInc_20200121_10-12G_EX-2.6_11948692_EX-2.6_Manufacturing Agreement_ Supply Agreement#86",
+    "WELLSFARGOMORTGAGEBACKEDSECURITIES2006-6TRUST_05_11_2006-EX-10.3-Yield Maintenance Agreement#8",
+    "VerizonAbsLlc_20200123_8-K_EX-10.4_11952335_EX-10.4_Service Agreement#99"
+   ]
+  },
+  {
+   "qid": "covenant-not-to-sue-072",
+   "category": "Covenant Not To Sue",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GridironBionutrientsInc_20171206_8-K_EX-10.1_10972555_EX-10.1_Endorsement Agreement#0",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#2",
+    "GridironBionutrientsInc_20171206_8-K_EX-10.2_10972556_EX-10.2_Endorsement Agreement#0"
+   ]
+  },
+  {
+   "qid": "covenant-not-to-sue-073",
+   "category": "Covenant Not To Sue",
+   "first_relevant": 10,
+   "recall@5": 0.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.1,
+   "ndcg@10": 0.17723928678404774,
+   "top3": [
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#102",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#3",
+    "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement#0"
+   ]
+  },
+  {
+   "qid": "covenant-not-to-sue-074",
+   "category": "Covenant Not To Sue",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "INGEVITYCORP_05_16_2016-EX-10.5-INTELLECTUAL PROPERTY AGREEMENT#0",
+    "INGEVITYCORP_05_16_2016-EX-10.5-INTELLECTUAL PROPERTY AGREEMENT#44",
+    "ReedsInc_20191113_10-Q_EX-10.4_11888303_EX-10.4_Development Agreement#5"
+   ]
+  },
+  {
+   "qid": "ip-ownership-assignment-075",
+   "category": "Ip Ownership Assignment",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT#15",
+    "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT#0",
+    "PareteumCorp_20081001_8-K_EX-99.1_2654808_EX-99.1_Hosting Agreement#32"
+   ]
+  },
+  {
+   "qid": "ip-ownership-assignment-076",
+   "category": "Ip Ownership Assignment",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#2",
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#18",
+    "BABCOCK_WILCOXENTERPRISES,INC_08_04_2015-EX-10.17-INTELLECTUAL PROPERTY AGREEMENT between THE BABCOCK _ WILCOX COMPANY and BABCOCK _ WILCOX ENTERPRISES, INC.#5"
+   ]
+  },
+  {
+   "qid": "ip-ownership-assignment-077",
+   "category": "Ip Ownership Assignment",
+   "first_relevant": 4,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.2640681225725909,
+   "top3": [
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT#0",
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT#12",
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT#11"
+   ]
+  },
+  {
+   "qid": "ip-ownership-assignment-078",
+   "category": "Ip Ownership Assignment",
+   "first_relevant": 4,
+   "recall@5": 0.25,
+   "recall@10": 0.25,
+   "recall@20": 0.25,
+   "recall@budget": 0.25,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.14606834984270645,
+   "top3": [
+    "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT#18",
+    "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT#17",
+    "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT#0"
+   ]
+  },
+  {
+   "qid": "ip-ownership-assignment-079",
+   "category": "Ip Ownership Assignment",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "PhoenixNewMediaLtd_20110421_F-1_EX-10.17_6958322_EX-10.17_Content License Agreement#0",
+    "PhoenixNewMediaLtd_20110421_F-1_EX-10.17_6958322_EX-10.17_Content License Agreement#16",
+    "PhoenixNewMediaLtd_20110421_F-1_EX-10.17_6958322_EX-10.17_Content License Agreement#6"
+   ]
+  },
+  {
+   "qid": "non-compete-080",
+   "category": "Non-Compete",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT#0",
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT#12",
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT#11"
+   ]
+  },
+  {
+   "qid": "non-compete-081",
+   "category": "Non-Compete",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "IMPCOTECHNOLOGIESINC_04_15_2003-EX-10.65-JOINT VENTURE AGREEMENT#0",
+    "IMPCOTECHNOLOGIESINC_04_15_2003-EX-10.65-JOINT VENTURE AGREEMENT#44",
+    "IMPCOTECHNOLOGIESINC_04_15_2003-EX-10.65-JOINT VENTURE AGREEMENT#26"
+   ]
+  },
+  {
+   "qid": "non-compete-082",
+   "category": "Non-Compete",
+   "first_relevant": 91,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "WOMENSGOLFUNLIMITEDINC_03_29_2000-EX-10.13-ENDORSEMENT AGREEMENT - Intellectual Property Rights                 Confidentiality and Non-Use Obligations Agreement#0",
+    "WOMENSGOLFUNLIMITEDINC_03_29_2000-EX-10.13-ENDORSEMENT AGREEMENT#16",
+    "WOMENSGOLFUNLIMITEDINC_03_29_2000-EX-10.13-ENDORSEMENT AGREEMENT#0"
+   ]
+  },
+  {
+   "qid": "non-compete-083",
+   "category": "Non-Compete",
+   "first_relevant": 27,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT #2",
+    "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT #0",
+    "BLUEROCKRESIDENTIALGROWTHREIT,INC_06_01_2016-EX-1.1-AGENCY AGREEMENT#1"
+   ]
+  },
+  {
+   "qid": "non-compete-084",
+   "category": "Non-Compete",
+   "first_relevant": 9,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.1111111111111111,
+   "ndcg@10": 0.18457569677956817,
+   "top3": [
+    "VALENCETECHNOLOGYINC_02_14_2003-EX-10-JOINT VENTURE CONTRACT#0",
+    "VALENCETECHNOLOGYINC_02_14_2003-EX-10-JOINT VENTURE CONTRACT#48",
+    "VALENCETECHNOLOGYINC_02_14_2003-EX-10-JOINT VENTURE CONTRACT#5"
+   ]
+  },
+  {
+   "qid": "non-transferable-license-085",
+   "category": "Non-Transferable License",
+   "first_relevant": 51,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PROFOUNDMEDICALCORP_08_29_2019-EX-4.5-SUPPLY AGREEMENT#0",
+    "PROFOUNDMEDICALCORP_08_29_2019-EX-4.5-SUPPLY AGREEMENT#41",
+    "PROFOUNDMEDICALCORP_08_29_2019-EX-4.5-SUPPLY AGREEMENT#45"
+   ]
+  },
+  {
+   "qid": "non-transferable-license-086",
+   "category": "Non-Transferable License",
+   "first_relevant": 11,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "SigaTechnologiesInc_20190603_8-K_EX-10.1_11695818_EX-10.1_Promotion Agreement#88",
+    "SigaTechnologiesInc_20190603_8-K_EX-10.1_11695818_EX-10.1_Promotion Agreement#2",
+    "SigaTechnologiesInc_20190603_8-K_EX-10.1_11695818_EX-10.1_Promotion Agreement#79"
+   ]
+  },
+  {
+   "qid": "non-transferable-license-087",
+   "category": "Non-Transferable License",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #0",
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #95",
+    "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT #101"
+   ]
+  },
+  {
+   "qid": "non-transferable-license-088",
+   "category": "Non-Transferable License",
+   "first_relevant": 4,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.43067655807339306,
+   "top3": [
+    "CURAEGISTECHNOLOGIES,INC_05_26_2010-EX-1-CORPORATE SPONSORSHIP AGREEMENT#0",
+    "CURAEGISTECHNOLOGIES,INC_05_26_2010-EX-1-CORPORATE SPONSORSHIP AGREEMENT#5",
+    "CURAEGISTECHNOLOGIES,INC_05_26_2010-EX-1-CORPORATE SPONSORSHIP AGREEMENT#1"
+   ]
+  },
+  {
+   "qid": "non-transferable-license-089",
+   "category": "Non-Transferable License",
+   "first_relevant": 2,
+   "recall@5": 0.75,
+   "recall@10": 0.75,
+   "recall@20": 1.0,
+   "recall@budget": 0.75,
+   "mrr@10": 0.5,
+   "ndcg@10": 0.5654495432396527,
+   "top3": [
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement#0",
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement#14",
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement#28"
+   ]
+  },
+  {
+   "qid": "rofr-rofo-rofn-090",
+   "category": "Rofr/Rofo/Rofn",
+   "first_relevant": 53,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#25",
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#24",
+    "VAPOTHERM, INC. - Manufacturing and Supply Agreement#27"
+   ]
+  },
+  {
+   "qid": "rofr-rofo-rofn-091",
+   "category": "Rofr/Rofo/Rofn",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GOOSEHEADINSURANCE,INC_04_02_2018-EX-10.6-Franchise Agreement#153",
+    "GOOSEHEADINSURANCE,INC_04_02_2018-EX-10.6-Franchise Agreement#203",
+    "GOOSEHEADINSURANCE,INC_04_02_2018-EX-10.6-Franchise Agreement#6"
+   ]
+  },
+  {
+   "qid": "rofr-rofo-rofn-092",
+   "category": "Rofr/Rofo/Rofn",
+   "first_relevant": 3,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.3333333333333333,
+   "ndcg@10": 0.5,
+   "top3": [
+    "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement#13",
+    "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement#14",
+    "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement#8"
+   ]
+  },
+  {
+   "qid": "rofr-rofo-rofn-093",
+   "category": "Rofr/Rofo/Rofn",
+   "first_relevant": 1,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 1.0,
+   "ndcg@10": 1.0,
+   "top3": [
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#33",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#32",
+    "RitterPharmaceuticalsInc_20200313_S-4A_EX-10.54_12055220_EX-10.54_Development Agreement#34"
+   ]
+  },
+  {
+   "qid": "rofr-rofo-rofn-094",
+   "category": "Rofr/Rofo/Rofn",
+   "first_relevant": 170,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "SigaTechnologiesInc_20190603_8-K_EX-10.1_11695818_EX-10.1_Promotion Agreement#88",
+    "SigaTechnologiesInc_20190603_8-K_EX-10.1_11695818_EX-10.1_Promotion Agreement#2",
+    "SigaTechnologiesInc_20190603_8-K_EX-10.1_11695818_EX-10.1_Promotion Agreement#0"
+   ]
+  },
+  {
+   "qid": "volume-restriction-095",
+   "category": "Volume Restriction",
+   "first_relevant": 6,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 1.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.16666666666666666,
+   "ndcg@10": 0.21840743681816419,
+   "top3": [
+    "MusclepharmCorp_20170208_10-KA_EX-10.38_9893581_EX-10.38_Co-Branding Agreement#0",
+    "GOCALLINC_03_30_2000-EX-10.7-Promotion Agreement#6",
+    "MusclepharmCorp_20170208_10-KA_EX-10.38_9893581_EX-10.38_Co-Branding Agreement#56"
+   ]
+  },
+  {
+   "qid": "volume-restriction-096",
+   "category": "Volume Restriction",
+   "first_relevant": 8,
+   "recall@5": 0.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.125,
+   "ndcg@10": 0.19342640361727081,
+   "top3": [
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT#0",
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT#9",
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT#6"
+   ]
+  },
+  {
+   "qid": "volume-restriction-097",
+   "category": "Volume Restriction",
+   "first_relevant": null,
+   "recall@5": 0.0,
+   "recall@10": 0.0,
+   "recall@20": 0.0,
+   "recall@budget": 0.0,
+   "mrr@10": 0.0,
+   "ndcg@10": 0.0,
+   "top3": [
+    "GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.6_11951677_EX-10.6_License Agreement#21",
+    "RandWorldwideInc_20010402_8-KA_EX-10.2_2102464_EX-10.2_Co-Branding Agreement#0",
+    "RaeSystemsInc_20001114_10-Q_EX-10.57_2631790_EX-10.57_Co-Branding Agreement#2"
+   ]
+  },
+  {
+   "qid": "volume-restriction-098",
+   "category": "Volume Restriction",
+   "first_relevant": 4,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@budget": 1.0,
+   "mrr@10": 0.25,
+   "ndcg@10": 0.43067655807339306,
+   "top3": [
+    "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT#0",
+    "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT#47",
+    "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT#41"
+   ]
+  },
+  {
+   "qid": "volume-restriction-099",
+   "category": "Volume Restriction",
+   "first_relevant": 1,
+   "recall@5": 0.5,
+   "recall@10": 0.5,
+   "recall@20": 0.5,
+   "recall@budget": 0.5,
+   "mrr@10": 1.0,
+   "ndcg@10": 0.3903800499921017,
+   "top3": [
+    "GRANTIERRAENERGYINC_05_07_2012-EX-10.6-TRANSPORTATION CONTRACT#0",
+    "GRANTIERRAENERGYINC_05_07_2012-EX-10.6-TRANSPORTATION CONTRACT#8",
+    "GRANTIERRAENERGYINC_05_07_2012-EX-10.6-TRANSPORTATION CONTRACT#142"
+   ]
+  }
+ ]
+}

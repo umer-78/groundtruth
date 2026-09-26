@@ -1,0 +1,20 @@
+[project]
+name = "groundtruth"
+version = "0.1.0"
+description = "Retrieval evaluation for a legal research assistant, measured on contracts labelled by lawyers"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy==2.4.6", "scipy==1.17.1", "scikit-learn==1.9.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["groundtruth"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

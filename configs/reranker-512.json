@@ -1,0 +1,24 @@
+{
+ "weights": [
+  -0.760483,
+  -1.584327,
+  1.691118,
+  16.109465,
+  5.380491,
+  -0.393946
+ ],
+ "bias": -16.255149,
+ "features": [
+  "bm25",
+  "dense",
+  "fused",
+  "matter",
+  "question",
+  "position"
+ ],
+ "trained_on": {
+  "queries": 600,
+  "candidates": 120000,
+  "relevant": 985
+ }
+}
