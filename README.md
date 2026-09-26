@@ -2,6 +2,9 @@
 
 [![CI](https://github.com/umer-78/groundtruth/actions/workflows/ci.yml/badge.svg)](https://github.com/umer-78/groundtruth/actions/workflows/ci.yml)
 
+**Live demo:** https://umer-78.github.io/groundtruth/ (every configuration's scores, and the passages
+plain BM25 and the recommended configuration return for each of the 100 questions)
+
 **A retrieval evaluation harness for a legal research assistant. 100 questions over 510 real
 contracts, each answered by passages that lawyers labelled, so a retrieval change is measured
 instead of argued. The configuration it recommends puts the labelled passage in the top 10 for
@@ -170,6 +173,7 @@ pip install -e '.[dev]'
 python -m groundtruth eval        # every configuration; the first run downloads CUAD (18 MB)
 python -m groundtruth gate        # the CI check
 python -m groundtruth review      # record a verdict on each golden question
+python -m groundtruth demo        # rebuild the demo page's data in docs/
 pytest -q
 ```
 

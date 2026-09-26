@@ -1,4 +1,4 @@
-"""python -m groundtruth eval | gate | review | generate | train-reranker | build-golden"""
+"""python -m groundtruth eval | gate | review | generate | demo | train-reranker | build-golden"""
 import argparse
 import csv
 import json
@@ -118,6 +118,13 @@ def cmd_generate(a):
     (RESULTS / "generation.json").write_text(json.dumps(rows, indent=1))
 
 
+def cmd_demo(a):
+    """Rebuild the demo page's data in docs/."""
+    from . import demo
+    payload = demo.build()
+    print(f"wrote docs/data.json: {len(payload['table'])} configurations, {len(payload['questions'])} questions")
+
+
 def main():
     p = argparse.ArgumentParser(prog="groundtruth")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -128,6 +135,7 @@ def main():
     sub.add_parser("review").set_defaults(fn=cmd_review)
     n = sub.add_parser("generate"); n.add_argument("--limit", type=int, default=100); n.add_argument("--k", type=int, default=10)
     n.set_defaults(fn=cmd_generate)
+    sub.add_parser("demo").set_defaults(fn=cmd_demo)
     a = p.parse_args()
     a.fn(a)
 

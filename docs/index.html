@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groundtruth: retrieval evaluation on real contracts</title>
+  <meta name="description" content="A retrieval evaluation harness for a legal research assistant: 100 questions over 510 contracts, answered by passages lawyers labelled. See what each configuration retrieves, question by question.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234338ca'/><path d='M22 11a7 7 0 1 0 1 8h-6v-3h9' fill='none' stroke='white' stroke-width='3'/></svg>">
+  <style>
+    :root {
+      --bg: #f6f7fb; --surface: #ffffff; --surface-2: #f1f2f8; --line: #dfe1ea; --text: #12131a; --muted: #5c6070;
+      --accent: #4338ca; --accent-soft: #eef0ff; --base: #9aa0b4; --good: #067647; --good-soft: #e7f6ee; --warn: #9a5b00; --warn-soft: #fff4e0;
+      --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d0e14; --surface: #16171f; --surface-2: #1d1f29; --line: #2b2e3b; --text: #eef0f6; --muted: #9ca1b3;
+        --accent: #8b93ff; --accent-soft: rgb(139 147 255 / .13); --base: #5d6377; --good: #56d364; --good-soft: rgb(86 211 100 / .12);
+        --warn: #e3b341; --warn-soft: rgb(227 179 65 / .12); color-scheme: dark; }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15.5px/1.6 var(--font); -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; }
+    header { padding: 28px 0 8px; }
+    .crumb { font-size: 13px; font-weight: 600; color: var(--muted); text-decoration: none; }
+    h1 { margin: 10px 0 6px; font-size: clamp(28px, 4.5vw, 40px); letter-spacing: -.02em; line-height: 1.1; }
+    .lede { margin: 0; max-width: 780px; color: var(--muted); font-size: 16.5px; }
+    .links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: 600 14px var(--font); text-decoration: none; cursor: pointer; }
+    .btn.primary { background: var(--accent); border-color: transparent; color: #fff; }
+    @media (prefers-color-scheme: dark) { .btn.primary { color: #0d0e14; } }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin-top: 18px; min-width: 0; }
+    .card h2 { margin: 0 0 6px; font-size: 18px; letter-spacing: -.01em; }
+    .card > p.sub { margin: 0 0 14px; color: var(--muted); font-size: 14px; }
+    .scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.best td { background: var(--accent-soft); font-weight: 700; }
+    .meter { display: inline-block; width: 90px; height: 8px; border-radius: 99px; background: var(--surface-2); vertical-align: middle; margin-left: 8px; overflow: hidden; }
+    .meter i { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+    .cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 8px 28px; }
+    .cat { display: grid; grid-template-columns: 1fr; gap: 3px; }
+    .cat .name { font-size: 13.5px; font-weight: 600; display: flex; justify-content: space-between; gap: 8px; }
+    .cat .name span { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+    .pair { display: grid; gap: 3px; }
+    .pair i { display: block; height: 7px; border-radius: 99px; }
+    .pair i.b { background: var(--base); }
+    .pair i.d { background: var(--accent); }
+    .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+    .legend span::before { content: ""; display: inline-block; width: 12px; height: 7px; border-radius: 99px; margin-right: 6px; vertical-align: middle; background: var(--c); }
+    .pick { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+    select { font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; max-width: 100%; flex: 1 1 320px; }
+    button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .q { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+    .q .label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    .q p { margin: 4px 0 10px; }
+    .q blockquote { margin: 4px 0 0; padding: 8px 12px; border-left: 3px solid var(--good); background: var(--surface); border-radius: 0 8px 8px 0; font-size: 14px; }
+    .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+    .col h3 { margin: 0 0 8px; font-size: 14px; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+    .col h3 small { font-weight: 600; color: var(--muted); }
+    .passage { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; background: var(--surface); }
+    .passage.hit { border-color: var(--good); box-shadow: inset 3px 0 0 var(--good); }
+    .passage .meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+    .passage .meta b { color: var(--text); font-size: 12.5px; }
+    .passage .doc { overflow-wrap: anywhere; }
+    .passage p { margin: 0; font-size: 13.5px; }
+    .chip { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 11.5px; font-weight: 700; }
+    .chip.hit { background: var(--good-soft); color: var(--good); }
+    .chip.same { background: var(--warn-soft); color: var(--warn); }
+    .chip.other { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
+    ul.plain { margin: 8px 0 0; padding-left: 18px; }
+    ul.plain li { margin: 5px 0; }
+    code { font-family: var(--mono); font-size: .92em; }
+    footer { margin-top: 30px; color: var(--muted); font-size: 13px; text-align: center; }
+    @media (max-width: 640px) { .card { padding: 16px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="crumb" href="https://umer-78.github.io/">← All projects</a>
+      <h1>Groundtruth</h1>
+      <p class="lede">A retrieval evaluation harness for a legal research assistant: 100 questions over 510 real contracts, each answered by a passage lawyers labelled. The recommended configuration puts that passage in the top 10 for <b id="headline">70.0%</b> of questions, against <b id="headlineBase">36.8%</b> for plain BM25, and CI fails any change that costs more than a point.</p>
+      <div class="links">
+        <a class="btn primary" href="#explore">Compare answers</a>
+        <a class="btn" href="https://github.com/umer-78/groundtruth">Code and method</a>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="h-table">
+      <h2 id="h-table">Every configuration, on the same 100 questions</h2>
+      <p class="sub">Recall@10: share of the labelled passage found in the top 10. "At 2,560 words" compares chunk sizes at the same amount of text handed to the model.</p>
+      <div class="scroll"><table id="table"><thead><tr><th>Chunks</th><th>Retrieval</th><th>Reranker</th><th>Contract expansion</th><th class="num">Recall@10</th><th class="num">Recall@20</th><th class="num">At 2,560 words</th><th class="num">MRR@10</th><th class="num">ms</th></tr></thead><tbody></tbody></table></div>
+    </section>
+
+    <section class="card" aria-labelledby="h-cats">
+      <h2 id="h-cats">Recall@10 by clause type</h2>
+      <p class="sub">Five questions per clause type, so each figure moves in steps of about 20 points: read the pattern, not the decimals.</p>
+      <div class="legend"><span style="--c: var(--base)">plain BM25</span><span style="--c: var(--accent)">recommended</span></div>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <section class="card" id="explore" aria-labelledby="h-explore">
+      <h2 id="h-explore">Compare the answers, question by question</h2>
+      <p class="sub">The top five passages each configuration returns. Green is the passage lawyers labelled, amber is the right contract but the wrong passage, grey is another contract.</p>
+      <div class="pick">
+        <label for="question" class="sr" style="position:absolute;left:-9999px">Question</label>
+        <select id="question"></select>
+        <button class="btn" id="random" type="button">Another question</button>
+      </div>
+      <div class="q" id="q"></div>
+      <div class="cols" id="cols"></div>
+    </section>
+
+    <section class="card" aria-labelledby="h-gate">
+      <h2 id="h-gate">The gate</h2>
+      <ul class="plain">
+        <li>Every push reruns the recommended configuration on all 100 questions and fails if recall@10 drops more than 1 point below <code>results/baseline.json</code>.</li>
+        <li>The branch <a href="https://github.com/umer-78/groundtruth/tree/demo/smaller-chunks"><code>demo/smaller-chunks</code></a> shrinks chunks to 128 words, a change that sounds harmless. Recall@10 falls from 70.0 to 49.8 and CI goes red.</li>
+        <li>The golden set has 100 questions, so one question is one point. The tolerance is set at that, not below it.</li>
+      </ul>
+    </section>
+
+    <footer>Built by <a href="https://github.com/umer-78">Umer Hashmi</a> · Contracts and labels from <a href="https://www.atticusprojectai.org/cuad">CUAD</a> by The Atticus Project, CC BY 4.0</footer>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const el = (tag, attrs = {}, ...kids) => {
+      const e = document.createElement(tag);
+      for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'text') e.textContent = v; else e.setAttribute(k, v); }
+      e.append(...kids);
+      return e;
+    };
+    const LABEL = { bm25: 'BM25', dense: 'dense', hybrid: 'hybrid' };
+    let data;
+
+    function tables() {
+      const best = data.table.find((r) => r.config === data.default);
+      const base = data.table.find((r) => r.config === data.baseline);
+      $('headline').textContent = `${best['recall@10'].toFixed(1)}%`;
+      $('headlineBase').textContent = `${base['recall@10'].toFixed(1)}%`;
+      const body = $('table').tBodies[0];
+      const order = ['bm25-256', 'dense-256', 'hybrid-256', 'bm25-512', 'dense-512', 'hybrid-512', 'hybrid-128', 'hybrid-128-rerank', 'hybrid-256-rerank', 'hybrid-512-rerank', 'hybrid-128-rerank-expand', 'hybrid-256-rerank-expand', 'hybrid-512-rerank-expand'];
+      const rows = order.map((n) => data.table.find((r) => r.config === n)).filter(Boolean);
+      body.replaceChildren(...rows.map((r) => {
+        const meter = el('span', { class: 'meter', 'aria-hidden': 'true' }, el('i', { style: `width:${r['recall@10']}%` }));
+        const r10 = el('td', { class: 'num' }, r['recall@10'].toFixed(1), meter);
+        return el('tr', r.config === data.default ? { class: 'best' } : {},
+          el('td', { text: `${r.size} words` }), el('td', { text: LABEL[r.method] }), el('td', { text: r.rerank ? '✓' : '' }), el('td', { text: r.expand ? '✓' : '' }),
+          r10, el('td', { class: 'num', text: r['recall@20'].toFixed(1) }), el('td', { class: 'num', text: r['recall@budget'].toFixed(1) }),
+          el('td', { class: 'num', text: r['mrr@10'].toFixed(1) }), el('td', { class: 'num', text: Math.round(r.ms) }));
+      }));
+      $('cats').replaceChildren(...data.categories.map((c) => el('div', { class: 'cat' },
+        el('div', { class: 'name' }, c.name, el('span', { text: `${Math.round(c[data.baseline])} → ${Math.round(c[data.default])}` })),
+        el('div', { class: 'pair', 'aria-hidden': 'true' }, el('i', { class: 'b', style: `width:${Math.max(1, c[data.baseline])}%` }), el('i', { class: 'd', style: `width:${Math.max(1, c[data.default])}%` })))));
+    }
+
+    function questions() {
+      const select = $('question');
+      const groups = {};
+      for (const q of data.questions) (groups[q.category] ||= []).push(q);
+      for (const [cat, qs] of Object.entries(groups)) {
+        const g = el('optgroup', { label: cat });
+        qs.forEach((q, i) => g.append(el('option', { value: q.qid, text: `${cat} ${i + 1}: ${q.matter.slice(0, 70)}` })));
+        select.append(g);
+      }
+      select.addEventListener('change', () => show(select.value));
+      $('random').addEventListener('click', () => {
+        const q = data.questions[Math.floor(Math.random() * data.questions.length)];
+        select.value = q.qid;
+        show(q.qid);
+      });
+    }
+
+    function show(qid) {
+      const q = data.questions.find((x) => x.qid === qid) || data.questions[0];
+      $('question').value = q.qid;
+      history.replaceState(null, '', `#${q.qid}`);
+      $('q').replaceChildren(
+        el('div', { class: 'label', text: 'The question' }), el('p', { text: `${q.matter}: ${q.question}` }),
+        el('div', { class: 'label', text: 'The passage lawyers labelled' }), el('blockquote', { text: q.answer }));
+      const names = { [data.baseline]: 'Plain BM25', [data.default]: 'Recommended' };
+      $('cols').replaceChildren(...[data.baseline, data.default].map((name) => {
+        const run = q.runs[name];
+        const found = run.first ? `labelled passage at rank ${run.first}` : 'labelled passage not retrieved';
+        return el('div', { class: 'col' }, el('h3', {}, names[name], el('small', { text: found })),
+          ...run.passages.map((p, i) => el('div', { class: `passage${p.hit ? ' hit' : ''}` },
+            el('div', { class: 'meta' }, el('b', { text: `#${i + 1}` }),
+              el('span', { class: `chip ${p.hit ? 'hit' : p.same ? 'same' : 'other'}`, text: p.hit ? 'labelled passage' : p.same ? 'right contract' : 'other contract' }),
+              el('span', { class: 'doc', text: p.doc.replace(/_/g, ' ').slice(0, 80) })),
+            el('p', { text: p.text }))));
+      }));
+    }
+
+    fetch('data.json').then((r) => r.json()).then((d) => {
+      data = d;
+      tables();
+      questions();
+      show(location.hash.slice(1) || 'governing-law-000');
+    }).catch((err) => { console.error(err); $('table').tBodies[0].innerHTML = '<tr><td colspan="9">Could not load the results.</td></tr>'; });
+  </script>
+</body>
+</html>
