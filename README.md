@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/umer-78/groundtruth/actions/workflows/ci.yml/badge.svg)](https://github.com/umer-78/groundtruth/actions/workflows/ci.yml)
 
+[![Groundtruth: the live demo](.github/preview.jpg)](https://umer-78.github.io/groundtruth/)
+
 **Live demo:** https://umer-78.github.io/groundtruth/ (every configuration's scores, and the passages
 plain BM25 and the recommended configuration return for each of the 100 questions)
 
