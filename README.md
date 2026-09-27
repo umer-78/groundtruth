@@ -164,7 +164,7 @@ FAIL: recall@10 dropped 20.2 points, more than the 1.0 allowed
 ```
 
 That run is the [`demo/smaller-chunks`](https://github.com/umer-78/groundtruth/tree/demo/smaller-chunks)
-branch.
+branch, whose CI passes only when the gate refuses the change this way.
 
 ## Run it
 
