@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-scene="search">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,17 +76,24 @@
     footer { margin-top: 30px; color: var(--muted); font-size: 13px; text-align: center; }
     @media (max-width: 640px) { .card { padding: 16px; } }
   </style>
+<!-- fx:v2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="fx.css">
+<style>:root { --fx-2: #06b6d4; --fx-3: #f59e0b; }</style>
+<!-- /fx:v2 -->
 </head>
 <body>
   <div class="wrap">
+    <!-- fx:v2 --><nav class="fx-nav" aria-label="On this page"><a class="fx-home" href="https://umer-78.github.io/">← All projects</a><a class="fx-gh" href="https://github.com/umer-78/groundtruth">GitHub</a></nav><!-- /fx:v2 -->
     <header>
-      <a class="crumb" href="https://umer-78.github.io/">← All projects</a>
+      <span class="fx-eyebrow">LLM engineering · Python</span>
       <h1>Groundtruth</h1>
       <p class="lede">A retrieval evaluation harness for a legal research assistant: 100 questions over 510 real contracts, each answered by a passage lawyers labelled. The recommended configuration puts that passage in the top 10 for <b id="headline">70.0%</b> of questions, against <b id="headlineBase">36.8%</b> for plain BM25, and CI fails any change that costs more than a point.</p>
       <div class="links">
         <a class="btn primary" href="#explore">Compare answers</a>
         <a class="btn" href="https://github.com/umer-78/groundtruth">Code and method</a>
       </div>
+      <div class="fx-tags" aria-hidden="true"><div><span>python</span><span>rag</span><span>retrieval</span><span>evaluation</span><span>bm25</span><span>legal</span><span>python</span><span>rag</span><span>retrieval</span><span>evaluation</span><span>bm25</span><span>legal</span></div></div>
     </header>
 
     <section class="card" aria-labelledby="h-table">
@@ -202,5 +209,6 @@
       show(location.hash.slice(1) || 'governing-law-000');
     }).catch((err) => { console.error(err); $('table').tBodies[0].innerHTML = '<tr><td colspan="9">Could not load the results.</td></tr>'; });
   </script>
+<!-- fx:v2 --><script type="module" src="fx.js"></script><!-- /fx:v2 -->
 </body>
 </html>
