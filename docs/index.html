@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-scene="search">
+<html lang="en" data-scene="ranked" data-look="epilogue" data-hero="band" data-card="solid" data-motif="lines" data-backdrop="rings">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,7 +77,7 @@
     @media (max-width: 640px) { .card { padding: 16px; } }
   </style>
 <!-- fx:v2 -->
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;800&family=Space+Mono:wght@400;700&display=swap" id="fx-fonts">
 <link rel="stylesheet" href="fx.css">
 <style>:root { --fx-2: #06b6d4; --fx-3: #f59e0b; }</style>
 <!-- /fx:v2 -->
@@ -91,6 +91,13 @@
 <meta property="og:image:alt" content="Groundtruth: retrieval evaluation on real contracts: the live demo">
 <meta name="twitter:card" content="summary_large_image">
 <!-- /og -->
+<meta name="theme-color" content="#6e7c0b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1106" media="(prefers-color-scheme: dark)">
+<style id="fx-look">:root[data-look] { --font: 'Epilogue', system-ui, -apple-system, "Segoe UI", sans-serif; --fx-display: 'Epilogue', system-ui, sans-serif; --mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; --fx-display-weight: 800; --fx-tracking: -0.035em; --fx-title-case: none; --fx-radius: 16px; --fx-hero-radius: 26px; --fx-control-radius: 14px; --accent: #6e7c0b; --accent-hover: #5d690b; --accent-soft: #f0f5de; --accent-glow: rgb(110 124 11 / 0.16); --on-accent: #ffffff; --fx-2: #5c7fe6; --fx-3: #1bb79e; --bg: #f8faf2; --bg-elevated: #fdfefa; --surface: #fefefb; --surface-2: #f2f5ea; --surface-3: #eaede1; --border: #dde0d3; --border-strong: #c3c6b8; --line: #dde0d3; }
+@media (prefers-color-scheme: dark) { :root[data-look]:not([data-theme="light"]) { --accent: #95a638; --accent-hover: #a8b85b; --accent-soft: rgb(149 166 56 / 0.14); --accent-glow: rgb(149 166 56 / 0.2); --on-accent: #111304; --fx-2: #91aefb; --fx-3: #2cdbbd; --bg: #0f1106; --bg-elevated: #15170c; --surface: #181b0e; --surface-2: #212316; --surface-3: #2a2d1f; --border: #2f3226; --border-strong: #414438; --line: #2f3226; } }
+:root[data-look][data-theme="dark"] { --accent: #95a638; --accent-hover: #a8b85b; --accent-soft: rgb(149 166 56 / 0.14); --accent-glow: rgb(149 166 56 / 0.2); --on-accent: #111304; --fx-2: #91aefb; --fx-3: #2cdbbd; --bg: #0f1106; --bg-elevated: #15170c; --surface: #181b0e; --surface-2: #212316; --surface-3: #2a2d1f; --border: #2f3226; --border-strong: #414438; --line: #2f3226; }</style>
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.min.js" data-fx>
+<link rel="modulepreload" href="fx3d.js" data-fx>
 </head>
 <body>
   <div class="wrap">
